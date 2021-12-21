@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <title>login...</title>
+<style>
+	 	body {
+	 	 background-color: lightblue;
+	}
+	 </style>
+	 <script>
+	 	 function checkPassword() {
+	 	 	 var password = document.getElementById("passwordBox");
+	 	 	 var passwordEntered = password.value;
+	 	 	 if(passwordEntered == "xjh288mm") {
+	 	 	 	 return true;
+ }
+	 	 	 alert("密码错误");
+				return false;
+ }
+	 </script>
+</head>
+<body>
+	<div style = "font-size:50pt;text-align:center;">
+		<p>
+			欢迎
+		</p>
+	</div>
+	<div style = "font-size:25px;text-align:center;">
+		<p>
+			用户名<input type = "text">
+		</p>
+	</div>
+	<div style = "font-size:25px;text-align:center;">
+		<p>
+			密码<input id = "passwordBox" type = "password" value = ""/>
+		</p>
+	</div>
+	<div style = "font-size:25px;text-align:center;">
+		<a href = "登陆成功.html" onclick = "return checkPassword();">
+			登录
+		</a>
+	</div>
+</body>
+</html>
